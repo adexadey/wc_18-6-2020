@@ -6,8 +6,79 @@
     <title>My Blog | How to push your code to remote with git</title>
 </head>
 <body>
-    <h1>
-        Welcome Back!
-    </h1>
+    <header>
+        <h1>
+            Git push to remote repository like a superhero
+        </h1>
+        <img src="pic.png" alt="Adewumi Adeyemo">
+    </header>
+    <main>
+        <section>
+            <img src="superhero.png" alt="superhero img">
+            <article>
+                <h1>Introduction</h1>
+                <p>According to <a href="https://en.wikipedia.org/wiki/Git">Wikipedia,</a>Git (/ɡɪt/) is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.</p>
+                <p>Today, I would like to share an essential command for developers to push their code to from their local machine. First of all, see below what is covered in this tutorial.</p>
+                <h1>Table of Content</h1>
+                <ol>
+                    <li>What is a repository</li>
+                    <li>How to create a repository on Github</li>
+                    <li>Running the git push command in terminal</li>
+                    <li>Conclusion</li>
+                </ol>
+            </article>
+            <article>
+                <h1>What is a Repository</h1>
+                <p>A repository is basically the directory where we initialize the Git to track the project on our local machine. Now because git is a collaborative tool, there is need to have a remote repository. That can be done with GitHub though there are other ones like GitLab and GitBucket.</p>
+            </article>
+            <article>
+                <h1>How to create a repository on Github</h1>
+                <p>To create a remote repo, you need to register a GitHub account from https://github.com/ then you click on the + (plus) sign at the top right of the page. click on ‘New Repository’ then fill the form and click on the ‘Create repository’ button.</p>
+                <figure>
+                    <img src="repo.png" alt="Github">
+                    <figcaption>Fig 1 | Create a repo page</figcaption>
+                </figure>
+                <p>On the next screen, you will get something like this:</p>
+                <figure>
+                    <img src="https.png" alt="Https Link">
+                    <figcaption>Fig 2 | HTTPS Link</figcaption>
+                </figure>
+                <p>Take note of the https link because you will need it to run the following command in the terminal.</p>
+            </article>
+            <article>
+                <h1>Running the git commands in terminal</h1>
+                <p>Now go to the terminal and run the two commands below (please note that the link is unique for every GitHub repository).</p>                
+                <hr>
+                <code>git remote add origin https://github.com/adexadey/learn-git-push.git</code><br />
+                <code>git push -u origin master</code>
+                <hr>
+                <p>Your terminal should look like this now:</p>
+                <figure>
+                    <img src="gitadd.png" alt="Https Link">
+                    <figcaption>Fig 3 | gitadd command</figcaption>
+                </figure>
+                <p>You will have to enter username and password. This a way Git authenticates to confirm you have access to the github repo specified in the command.</p>
+                <figure>
+                    <img src="gitpush.png" alt="Https Link">
+                    <figcaption>Fig 4 | gitpush command</figcaption>
+                </figure>
+                <p>The -u in the command is called flag and it is essential so that you can just use git push for subsequent push without having to use git push origin master</p>
+            </article>
+            <article>
+                <h1>Conclusion</h1>
+                <p>Now, your code already hosted and can be accessed from the GitHub link.</p>
+                <figure>
+                    <img src="remoterepo.png" alt="Updated remote repo">
+                    <figcaption>Fig 4 | Updated screen of the remote repo</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <small>WRITTEN BY</small>
+        <P>Adewumi Adeyemo &copy; 2020</P>
+    </footer>
+    
     </body>
 </html>
